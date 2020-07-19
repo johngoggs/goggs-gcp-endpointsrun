@@ -1,0 +1,8 @@
+**/cloudbuild
+**/.vscode
+**/esp-build
+**/flask
+**/openapi
+**/terraform
+**/tools
+**/.gitignore

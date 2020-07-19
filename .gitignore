@@ -1,0 +1,6 @@
+**/.vscode
+**/flask
+**/terraform/**/**.json
+**/.terraform
+**/**tfstate**
+**/esp-build

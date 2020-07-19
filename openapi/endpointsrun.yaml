@@ -1,0 +1,59 @@
+swagger: '2.0'
+info:
+  title: API Services
+  description: Sample API on Cloud Endpoints with a Cloud Run backend
+  version: 0.1.0
+host: gateway-api-1234abcd.uc.a.run.app
+schemes:
+  - https
+produces:
+  - application/json
+x-google-backend:
+  address: https://example-api-1234abcd.uc.a.run.app
+  protocol: h2
+paths:
+  /api/status:
+    get:
+      summary: Status of the server
+      operationId: get_status
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: string
+  /api/auth/apikey:
+    get:
+      summary: Status of the server
+      security:
+        - api_key: []
+      operationId: get_auth_apikey
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: string
+  /api/auth/bearer:
+    get:
+      summary: Status of the server
+      security:
+        - bearer: []
+      operationId: get_auth_bearer
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: string
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+  bearer:
+    authorizationUrl: ""
+    flow: "implicit"
+    type: "oauth2"
+    x-google-issuer: "email_of_sa"
+    x-google-jwks_uri: "https://www.googleapis.com/robot/v1/metadata/x509/email_of_sa"
+    x-google-jwt-locations:
+      - header: "Authorization"
+        value_prefix: "Bearer "
