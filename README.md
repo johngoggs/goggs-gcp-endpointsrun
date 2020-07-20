@@ -1,6 +1,6 @@
 # Using Cloud Run with Cloud Endpoints
 
-Repo is intended to support <a href="" target="_blank">Using Cloud Endpoints with Cloud Run, featuring ESPv2</a> blog post.
+Repo is intended to support <a href="https://j.goggs.eu/2020/07/using-cloud-endpoints-with-cloud-run/" target="_blank">Using Cloud Endpoints with Cloud Run, featuring ESPv2</a> blog post.
 
 ## I'm a developer
 
@@ -12,8 +12,8 @@ Repo is intended to support <a href="" target="_blank">Using Cloud Endpoints wit
 
 ## I'm a newbie
 
-Read my <a href="" target="_blank">blog post</a> to follow along.
+Read my <a href="https://j.goggs.eu/2020/07/using-cloud-endpoints-with-cloud-run/" target="_blank">blog post</a> to follow along.
 
 ## Author & License
 
-Content created by John Goggs 2020 - Released under the [MIT license](license)
+Content created by John Goggs 2020 - Released under the [MIT license](LICENSE)
