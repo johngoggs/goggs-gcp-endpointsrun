@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 import jwt # Uses pytjwt library
-import json
 
 iat = datetime.utcnow()
 exp = iat + timedelta(seconds=3600)
