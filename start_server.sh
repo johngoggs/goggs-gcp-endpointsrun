@@ -1,0 +1,1 @@
+flask run --port 8080 # add --debug option to reload server on save
