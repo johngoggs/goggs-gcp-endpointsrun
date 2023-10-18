@@ -4,3 +4,5 @@
 **/.terraform
 **/**tfstate**
 **/esp-build
+**/__pycache__
+**/venv
