@@ -24,25 +24,25 @@ def get_auth_sabearer():
 def bad_request_error(e):
     return jsonify(code=400,
                    message='Bad request',
-                   detailedMessage='{}'.format(e)), 400
+                   detailedMessage=f'{e}'), 400
 
 
 @app.errorhandler(404)
 def not_found_error(e):
     return jsonify(code=404,
                    message='Path not found',
-                   detailedMessage='{}'.format(e)), 404
+                   detailedMessage=f'{e}'), 404
 
 
 @app.errorhandler(405)
 def method_not_allowed_error(e):
     return jsonify(code=405,
                    message='Method not allowed',
-                   detailedMessage='{}'.format(e)), 405
+                   detailedMessage=f'{e}'), 405
 
 
 @app.errorhandler(Exception)
 def internal_server_error(e):
     return jsonify(code=500,
                    message='Internal server error',
-                   detailedMessage='{}'.format(e)), 500
+                   detailedMessage=f'{e}'), 500
